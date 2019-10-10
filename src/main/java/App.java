@@ -6,8 +6,18 @@ public class App {
         Mobile mobile = new Mobile();
         Mobile iphone = new Iphone();
         Mobile android = new Android();
-        mobile.call("boss billy");
-        iphone.call("boss billy");
-        android.call("boss billy");
+        mobile.call("fghfghfghfghfghfghfhfhfhfghfhsdgdgdgdfgdfgdfg");
+        iphone.call("sdf");
+        android.call("sdffff");
+
+        Person person = new Person();
+        person.setName("Ken");
+        person.setMobile(iphone);
+        person.makeCall();
+
+        IphoneRobot robot = new IphoneRobot();
+        Iphone otherIphone = new Iphone();
+        robot.setIphone(otherIphone);
+        robot.makeCall();
     }
 }
